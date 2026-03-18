@@ -1,18 +1,14 @@
-<div class="min-h-screen bg-gray-100 p-6">
-  <header class="mb-8">
-    <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">🎬 Movie Rating</h1>
-    <nav class="flex justify-center space-x-4">
-      <a routerLink="/" class="text-blue-500 hover:text-blue-700 font-medium">Home</a>
+<div class="min-h-screen bg-[#0a0a0f]">
+  <header class="border-b border-[#2a2535] px-8 py-5 flex items-center justify-between" style="background: linear-gradient(180deg, #12111a 0%, #0a0a0f 100%);">
+    <div class="text-[#f0c060] text-2xl" style="font-family: 'Playfair Display', serif;">
+      🎬 Ciné<span class="text-[#e8e4dc] font-normal">Note</span>
+    </div>
+    <nav>
+      <a routerLink="/" class="text-[#8880a0] hover:text-[#f0c060] font-medium transition-colors text-sm tracking-wide">Home</a>
     </nav>
   </header>
 
-  <main class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+  <main class="max-w-6xl mx-auto px-8 py-8">
     <router-outlet></router-outlet>
   </main>
 </div>
-
-
-
-
-
-

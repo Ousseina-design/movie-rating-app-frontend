@@ -141,4 +141,16 @@ export class MovieListComponent {
     await this.movieService.removeMovie(movieId);
     await this.loadMovies();
   }
+Math = Math;
+
+  getTotalVotes(): number {
+    return this.movies().reduce((s, m) => s + m.ratingCount, 0);
+  }
+
+  getGlobalAvg(): string {
+    const totalVotes = this.getTotalVotes();
+    if (totalVotes === 0) return '—';
+    const totalRating = this.movies().reduce((s, m) => s + m.totalRating, 0);
+    return (totalRating / totalVotes).toFixed(1);
+  }
 }
